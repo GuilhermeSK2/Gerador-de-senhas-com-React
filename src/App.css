@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+*{
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  background-image: radial-gradient(circle at 74.18% 116.45%, #af5457 0, #ab4958 12.5%, #a63e59 25%, #a0305b 37.5%, #97215d 50%, #8d0f60 62.5%, #810065 75%, #73006a 87.5%, #630070 100%);
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo{
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+.container-input{
+  max-width: 480px;
+  margin: 14px 0;
+}
+
+.container-input span {
+  color: #FFF;
+  font-size: 22px;
+}
+
+.slider {
+  margin-top: 8px;
+  width: 100%;
+  height: 18px;
+  border-radius: 5px;  
+  background: #DFDFDF;
+  outline: none;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.button-cta{
+  border: 5em;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  padding: 0.7em 2em;
+  border: 2px solid #535353;
+  border-radius: 65px;
+  box-shadow: 1px 1px 10px rgba(26, 26, 26, 0.438);
+  -webkit-transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.button-cta:hover{
+  color: #4568dc;
+  background: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-password{
+  max-width: 480px;
+  margin: 14px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title{
+  text-align: center;
+  color: #FFF;
+  font-size: 28px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+} 
+
+.password{
+  height: 60px;
+  background-color: rgba(0,0,0,0.40);
+  border: 1px solid #313131;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  border-radius: 4px;
+  transition: transform 0.5s;
+}
+.password:hover{
+  transform: scale(1.05);
+  border-color: #FFF;
+}
+
+.hide{
+  display: none;
+}
+
+.tooltip{
+  color: #000000;
+  position: relative;
+  top: 20px;
+  padding: 6px 8px;
+  font-size: 16px;
+  border-radius: 6px;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease-in-out;
+  text-align: center;
+}
+
+.container-password:hover .tooltip{
+  bottom: 50px;
+  visibility: visible;
+  opacity: 1;
 }
