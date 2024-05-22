@@ -13,7 +13,6 @@
 - CSS
 - JavaScript
 - React
-- APIs
 - Git e Github
 
 ## Contato
